@@ -1,0 +1,137 @@
+html
+
+    <div class="container">
+        <div class="menu-bar-container">
+            <div id="menu-buttons">
+                <button>Hosting</button>
+                <button>VPS</button>
+                <button>Domain</button>
+                <button>Pricing</button>
+            </div>
+            <div id="menu-bar-logo">
+                <img src="./Images/logo.svg" alt="">
+            </div>
+        </div>
+        <div class="banner-container">
+            <div class="left-column">
+                <h1>Cloud Hosting <br> for Pros</h1>
+                <p>Deploy your website in less than 60 seconds!</p>
+                <button>GET STARTED</button>
+            </div>
+            <div class="right-column">
+                <img src="./Images/banner.png" alt="">
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search">
+                <h1>Starting at $9 per month</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, exercitationem?
+            </div>
+
+        </div>
+    </div>
+
+
+    Css
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  color: var(--color-headings);
+}
+button {
+  color: #d2cfd9;
+  background: none;
+  border: none;
+}
+
+.menu-bar-container {
+  display: flex;
+  flex-flow: row-reverse;
+  border: 2px solid black;
+  position: absolute;
+  width: 100vw;
+  height: 5vh;
+  background-color: #020000;
+  font-size: 16px;
+}
+
+#menu-buttons {
+  display: flex;
+}
+#menu-buttons button:hover {
+  color: #ffffff;
+}
+#menu-buttons button {
+  margin-right: 49px;
+}
+#menu-bar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.banner-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #020000;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 400px;
+}
+
+.banner-container img {
+  height: 50vh;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.banner-container h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+.banner-container p {
+  font-size: 20px;
+  text-align: left;
+  color: #70767d;
+}
+.banner-container button {
+  background-color: #ff3400;
+  border-radius: 63px;
+  height: 62px;
+  width: 189px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
